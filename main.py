@@ -1,5 +1,6 @@
 import requests
 import datetime as dt
+import random
 pory_dnia=[
     {"etykieta": "Noc (0:00)", "indeks": 0},
     {"etykieta": "Rano (6:00)", "indeks": 2},
@@ -11,8 +12,21 @@ dni=[
     {"nazwa": "Jutro", "indeks": 1},
     {"nazwa": "Pojutrze", "indeks": 2}
 ]
+cytaty=[
+    "Larp it till you make it",
+    "The more you larp the less you larp",
+    "Perfection is not attainable, but if we chase perfection we can catch excellence",
+    "Being challenged in life is inevitable, being defated is optional",
+    "Don't watch the clock, do what it does - keep going!",
+    "Change the world by being yourself!",
+    "Everything comes to you at the right time. Be patient",
+    "Today is the period of struggle.Tommorow will be the period of success!",
+    "All dreams are within reach. All you have to do is keep moving towards them",
+    "Learning is not about knowing more, but about becoming wiser than you were yesterday"
+]
 print()
-
+rancytat=random.choice(cytaty)
+print(f"Cytat na dziś: {rancytat}\n")
 x=dt.datetime.now()
 print(f"Dzisiejsza data to: {x.day}.{x.month}.{x.year}")
 print()

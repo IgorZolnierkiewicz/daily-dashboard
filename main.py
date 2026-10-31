@@ -1,4 +1,5 @@
 import requests
+import datetime as dt
 pory_dnia=[
     {"etykieta": "Noc (0:00)", "indeks": 0},
     {"etykieta": "Rano (6:00)", "indeks": 2},
@@ -10,6 +11,11 @@ dni=[
     {"nazwa": "Jutro", "indeks": 1},
     {"nazwa": "Pojutrze", "indeks": 2}
 ]
+print()
+
+x=dt.datetime.now()
+print(f"Dzisiejsza data to: {x.day}.{x.month}.{x.year}")
+print()
 url="https://wttr.in/Trzcianka?format=j1"
 url2="https://wttr.in/Poznan?format=j1"
 odpowiedz=requests.get(url)

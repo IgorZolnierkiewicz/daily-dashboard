@@ -2,10 +2,10 @@ import requests
 import datetime as dt
 import random
 pory_dnia=[
-    {"etykieta": "Noc (0:00)", "indeks": 0},
-    {"etykieta": "Rano (6:00)", "indeks": 2},
+    {"etykieta": "Noc (0:00)      ", "indeks": 0},
+    {"etykieta": "Rano (6:00)     ", "indeks": 2},
     {"etykieta": "Południe (12:00)", "indeks":4},
-    {"etykieta": "Wieczór (18:00)", "indeks": 6}
+    {"etykieta": "Wieczór (18:00) ", "indeks": 6}
 ]
 dni=[
     {"nazwa": "Dzisiaj", "indeks": 0},

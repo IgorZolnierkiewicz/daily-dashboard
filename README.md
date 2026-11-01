@@ -10,8 +10,9 @@ Prosty terminalowy panel pogody napisany w pythonie
 3. Aktywuj środowisko:
 	```source venv/bin/activate```
 4. Zainstaluj wymagane biblioteki:
-	pip install requests```
-	pip install psutil```
+	```bash
+ 	pip install requests
+	pip install psutil
 5. Uruchom program
 	```python3 main.py```
 

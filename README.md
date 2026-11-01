@@ -6,13 +6,16 @@ Prosty terminalowy panel pogody napisany w pythonie
 
 1. Sklonuj repozytorium i wejdź do folderu projektu
 2. Stwórz środowisko wirtualne:
-	```python3 -m venv venv```
+	```bash
+ 	python3 -m venv venv
 3. Aktywuj środowisko:
-	```source venv/bin/activate```
-4. Zainstaluj wymagane biblioteki:
+	```bash
+	source venv/bin/activate
+5. Zainstaluj wymagane biblioteki:
 	```bash
  	pip install requests
 	pip install psutil
-5. Uruchom program
-	```python3 main.py```
+6. Uruchom program
+	```bash
+ 	python3 main.py
 

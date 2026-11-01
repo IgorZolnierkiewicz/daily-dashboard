@@ -1,6 +1,7 @@
 import requests
 import datetime as dt
 import random
+import psutil
 pory_dnia=[
     {"etykieta": "Noc (0:00)      ", "indeks": 0},
     {"etykieta": "Rano (6:00)     ", "indeks": 2},
@@ -69,3 +70,12 @@ for dzien in dni:
         deszcz=dane2['weather'][dzien_idx]['hourly'][pora_idx]['chanceofrain']
         opis=dane2['weather'][dzien_idx]['hourly'][pora_idx]['weatherDesc'][0]['value']
         print(f"[{nazwa}] Temperatura: {temp}° | Deszcz: {deszcz}% | Opis: {opis}")
+print()
+print("---------------------------------------------------------")
+print()
+ram=psutil.virtual_memory().percent
+print(f"Użycie pamięci RAM: {ram}%")
+cpu=psutil.cpu_percent(interval=1)
+print(f"Użycie CPU: {cpu}%")
+
+print()
